@@ -157,3 +157,4 @@ Złącze ChainBus dostarcza następujące linie zasilania:
 *   **Software:** MIT License
 
 [Template](https://github.com/KoNaR-Hefajstos/MMS3_hat_templates/) jest na licencji CC0 1.0 Universal. **Reszta projektu nie jest na tej licencji**
+
