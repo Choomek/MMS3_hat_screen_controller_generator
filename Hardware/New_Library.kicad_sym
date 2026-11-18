@@ -308,7 +308,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -11.43 180)
+				(at 16.51 6.35 180)
 				(length 2.54)
 				(name "D2+"
 					(effects
@@ -326,7 +326,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -8.89 180)
+				(at 16.51 3.81 180)
 				(length 2.54)
 				(name "D2-"
 					(effects
@@ -398,7 +398,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 6.35 180)
+				(at 16.51 -8.89 180)
 				(length 2.54)
 				(name "D0+"
 					(effects
@@ -416,7 +416,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 3.81 180)
+				(at 16.51 -11.43 180)
 				(length 2.54)
 				(name "D0-"
 					(effects
@@ -434,7 +434,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -19.05 180)
+				(at 16.51 -16.51 180)
 				(length 2.54)
 				(name "CLK+"
 					(effects
@@ -452,7 +452,7 @@
 				)
 			)
 			(pin input line
-				(at 16.51 -16.51 180)
+				(at 16.51 -19.05 180)
 				(length 2.54)
 				(name "CLK-"
 					(effects
