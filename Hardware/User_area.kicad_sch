@@ -45,6 +45,16 @@
 		)
 		(uuid "1142f95b-1182-421b-b7e9-4703ec827a09")
 	)
+	(wire
+		(pts
+			(xy 59.69 62.23) (xy 85.09 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1da519f8-765b-4c74-80e0-3a08f81dd304")
+	)
 	(bus
 		(pts
 			(xy 114.3 39.37) (xy 119.38 39.37)
@@ -84,16 +94,6 @@
 			(type default)
 		)
 		(uuid "28fddf01-37fd-48dc-bda3-56d20dce232d")
-	)
-	(wire
-		(pts
-			(xy 59.69 62.23) (xy 85.09 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3041e3a4-84e0-4ed5-b836-38de4efcd03f")
 	)
 	(bus
 		(pts
@@ -376,16 +376,6 @@
 				(justify left top)
 			)
 		)
-		(pin "ST-LINK{USB}" input
-			(at 215.9 101.6 0)
-			(uuid "c1c68c7b-8a68-49a7-a576-fea729402f6c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "STLINK{UART}" input
 			(at 176.53 106.68 180)
 			(uuid "d154acd1-ab08-49ee-9e7c-b98c7b4247b2")
@@ -404,6 +394,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "BOOT{USB}" input
+			(at 215.9 101.6 0)
+			(uuid "a99e9f78-9cc2-47f5-b04a-35a74195fea8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -462,9 +462,9 @@
 				(justify left)
 			)
 		)
-		(pin "HDMI{DVI-D}" input
-			(at 231.14 45.72 180)
-			(uuid "40b779ae-7133-4193-803d-ffda410bdc7f")
+		(pin "HDMI_COMP{I2C}" input
+			(at 231.14 35.56 180)
+			(uuid "f6d2b32b-7432-4598-9807-96788ee23dbf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -472,9 +472,9 @@
 				(justify left)
 			)
 		)
-		(pin "HDMI_COMP{I2C}" input
-			(at 231.14 35.56 180)
-			(uuid "d9119b3d-055a-4c73-93ee-a72aa164be8b")
+		(pin "HDMI{HDMI}" input
+			(at 231.14 45.72 180)
+			(uuid "adf7852d-f9f3-435e-8c89-41989f0489b4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -548,9 +548,9 @@
 				(justify right)
 			)
 		)
-		(pin "HDMI{DVI-D}" input
-			(at 215.9 45.72 0)
-			(uuid "43e50708-068a-48e5-9ef8-5411e6506f6c")
+		(pin "HDMI_COMP{I2C}" input
+			(at 215.9 35.56 0)
+			(uuid "dc7b03aa-aa37-47bc-a0bf-b30326e1fee5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -558,9 +558,19 @@
 				(justify right)
 			)
 		)
-		(pin "HSTX{DVI-D}" input
+		(pin "HDMI{HDMI}" input
+			(at 215.9 45.72 0)
+			(uuid "dc379f11-408c-42e5-92bc-7bd6ade63b05")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "HSTX{HDMI}" input
 			(at 176.53 45.72 180)
-			(uuid "802a7fe9-0573-4b0c-b69d-54825df0af9a")
+			(uuid "30225b42-51e4-4d3b-8e03-8364e9c5b0c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -568,19 +578,9 @@
 				(justify left)
 			)
 		)
-		(pin "HDMI_COMP{I2C}" input
-			(at 215.9 35.56 0)
-			(uuid "69ef3f3f-88a0-4d2d-9ae3-bc20cee13f16")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "MCU_COMP{I2C}" input
 			(at 176.53 35.56 180)
-			(uuid "6510cb14-3ea0-4216-84bb-9b5ca37723e2")
+			(uuid "271f923b-e844-45ed-bf97-e24db7f5894d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -827,26 +827,6 @@
 				(justify right)
 			)
 		)
-		(pin "QPI_CS_SRAM" input
-			(at 119.38 49.53 180)
-			(uuid "6ed4a146-febc-48a8-81bf-96f959e74f80")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "QPI_CS_FLASH" input
-			(at 119.38 46.99 180)
-			(uuid "34e27b95-2a57-40d6-ae68-8d229625ffb9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "WD_DONE" input
 			(at 119.38 100.33 180)
 			(uuid "072ebc5a-c07f-42dc-a7e1-0826d24c1c1a")
@@ -877,26 +857,6 @@
 				(justify left)
 			)
 		)
-		(pin "SWD{SWD}" input
-			(at 162.56 99.06 0)
-			(uuid "57b43237-b922-4366-9274-e8771dfd7fff")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "TOUCH{SPI}" input
-			(at 162.56 138.43 0)
-			(uuid "d77a99c6-7dc2-49a1-a95a-9496f39b19b9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "T_CS" input
 			(at 162.56 140.97 0)
 			(uuid "a1b6b539-9b84-4ee5-b4db-29ece9f0542d")
@@ -917,9 +877,9 @@
 				(justify right)
 			)
 		)
-		(pin "HSTX{DVI-D}" input
+		(pin "HSTX{HDMI}" input
 			(at 162.56 45.72 0)
-			(uuid "e98e449a-03ac-4ad9-921f-da8515b515aa")
+			(uuid "43ab4658-20f5-4f88-bada-68ea4b3e3e51")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -929,7 +889,7 @@
 		)
 		(pin "MCU_COMP{I2C}" input
 			(at 162.56 35.56 0)
-			(uuid "5d4d5bac-4fd7-4577-8950-9ceee36077f5")
+			(uuid "0b8605c6-3d33-47cd-832b-539a681647fe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,9 +897,9 @@
 				(justify right)
 			)
 		)
-		(pin "MCUSPI{QPI}" input
+		(pin "MCU_QSPI{QSPI}" input
 			(at 119.38 54.61 180)
-			(uuid "db6b276d-4810-45f5-9f04-d396828c729d")
+			(uuid "d2e9a87f-86ad-4dac-8ce5-afcbaa86b137")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -949,7 +909,47 @@
 		)
 		(pin "PIO{USB}" input
 			(at 119.38 81.28 180)
-			(uuid "6fd31bf8-71b0-42e3-b54c-f3c280df84d3")
+			(uuid "6d51fb60-b48d-4788-aaec-da969b79e4d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PROG_SWD{SWD}" input
+			(at 162.56 99.06 0)
+			(uuid "600108df-fba4-448f-8c93-99d35376b7ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "QSPI_CS_SRAM" input
+			(at 119.38 49.53 180)
+			(uuid "f1650fdf-281f-4a80-a320-49427a6eedcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TOUCH{SPI}" input
+			(at 162.56 138.43 0)
+			(uuid "9c73dc38-3c94-4e70-9297-39cb754c14b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "QSPI_CS_FLASH" input
+			(at 119.38 46.99 180)
+			(uuid "18ca7278-9095-415f-a063-1c056fb23dc2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1059,9 +1059,9 @@
 				(justify left top)
 			)
 		)
-		(pin "MCUSPI{QPI}" input
+		(pin "MCU_QSPI{QSPI}" input
 			(at 59.69 67.31 0)
-			(uuid "ed9dba2f-9535-49be-920f-d5b62212c3d7")
+			(uuid "3c20becd-5c20-4fb1-b42b-525c5ece7b4f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1069,9 +1069,9 @@
 				(justify right)
 			)
 		)
-		(pin "QPI_CS_SRAM" input
+		(pin "QSPI_CS_SRAM" input
 			(at 59.69 62.23 0)
-			(uuid "698b3423-cde5-4185-aa69-28995065c399")
+			(uuid "8c086cb2-3d5f-446a-8693-cc6b0155ddbd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1125,9 +1125,9 @@
 				(justify left top)
 			)
 		)
-		(pin "ST-LINK{USB}" input
+		(pin "BOOT{USB}" input
 			(at 231.14 101.6 180)
-			(uuid "51ef1522-977e-458c-bb32-cf009d678b41")
+			(uuid "57585061-8bff-404a-8110-aae94ff51415")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1237,9 +1237,9 @@
 				(justify left top)
 			)
 		)
-		(pin "MCUSPI{QPI}" input
+		(pin "MCU_QSPI{QSPI}" input
 			(at 59.69 39.37 0)
-			(uuid "4afa2eee-d135-41d4-ab32-49d4b5e5b539")
+			(uuid "f31c1af9-544b-4daa-84f8-d84916992504")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1247,9 +1247,9 @@
 				(justify right)
 			)
 		)
-		(pin "QPI_CS_FLASH" input
+		(pin "QSPI_CS_FLASH" input
 			(at 59.69 35.56 0)
-			(uuid "0454ab02-f673-49ea-b571-3227ff1333f7")
+			(uuid "49f45334-ac40-4187-91cf-d43c39918fa5")
 			(effects
 				(font
 					(size 1.27 1.27)

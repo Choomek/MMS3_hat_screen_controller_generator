@@ -7648,6 +7648,16 @@
 		)
 		(uuid "892f1a9b-19b1-4591-ab05-bac7995df036")
 	)
+	(bus
+		(pts
+			(xy 172.72 82.55) (xy 173.99 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e03b76d-2f43-4fb4-bf01-ad4bbf894a05")
+	)
 	(wire
 		(pts
 			(xy 208.28 106.68) (xy 208.28 90.17)
@@ -8328,16 +8338,6 @@
 		)
 		(uuid "805097f3-0a6b-48ec-8ba5-3f574790d665")
 	)
-	(label "ST-LINK.D+"
-		(at 139.7 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "85afc97a-bc92-4dac-82b5-27728b2b4558")
-	)
 	(label "STLINK.RX"
 		(at 241.3 54.61 0)
 		(effects
@@ -8428,6 +8428,16 @@
 		)
 		(uuid "c6ead053-b625-4899-9129-a513a5adfba5")
 	)
+	(label "BOOT.D+"
+		(at 137.16 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d1ba1724-738d-4092-ae6d-c4edb547bc58")
+	)
 	(label "STLINK-OSC_IN"
 		(at 66.04 69.85 0)
 		(effects
@@ -8437,6 +8447,16 @@
 			(justify left bottom)
 		)
 		(uuid "d25ba681-48c6-4133-9a96-07868abc3942")
+	)
+	(label "BOOT.D-"
+		(at 137.16 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6c13434-f270-4028-89f0-5f309bbbdc7a")
 	)
 	(label "CLK"
 		(at 208.28 106.68 90)
@@ -8457,16 +8477,6 @@
 			(justify left bottom)
 		)
 		(uuid "e5e5d739-571b-4531-af81-e62e66fcb407")
-	)
-	(label "ST-LINK.D-"
-		(at 140.97 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eae43513-2ea8-4b38-aff6-38007766a24f")
 	)
 	(label "UART_FLIP_RX"
 		(at 227.33 54.61 180)
@@ -8519,17 +8529,6 @@
 		)
 		(uuid "07eb73ef-9c73-46ea-aa0a-5a919588c87d")
 	)
-	(hierarchical_label "ST-LINK{USB}"
-		(shape input)
-		(at 153.67 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "273f2faa-4e76-4269-9b57-824e61d0cc61")
-	)
 	(hierarchical_label "STLINK{UART}"
 		(shape input)
 		(at 257.81 40.64 0)
@@ -8540,6 +8539,17 @@
 			(justify left)
 		)
 		(uuid "984c0ca2-3698-4e45-9de7-057ace1f5de0")
+	)
+	(hierarchical_label "BOOT{USB}"
+		(shape input)
+		(at 153.67 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c79a785e-a753-4e14-a4e9-4a20881ebfbc")
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,220Ω")
