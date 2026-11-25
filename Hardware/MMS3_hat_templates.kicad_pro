@@ -680,12 +680,7 @@
     },
     "net_colors": {},
     "netclass_assignments": {
-      "/Power Connector/VIN_BRD": [
-        "50V",
-        "PWR"
-      ],
       "VIN_CHAINBUS": [
-        "50V",
         "PWR"
       ]
     },
@@ -1255,10 +1250,6 @@
     [
       "ec6d73af-72b0-4068-85fb-cca3c5143749",
       "Bus_switch"
-    ],
-    [
-      "f11c3b61-ae6a-4858-9d37-bbf426f44fb0",
-      "Power Connector"
     ],
     [
       "56050d79-5900-47d6-893d-3da0e8bf5810",
